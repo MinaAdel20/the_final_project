@@ -26,10 +26,10 @@
   </head>
   <body>
     <!--start navbar  -->
-    <nav class="navbar navbar-expand-lg sticky-top custom-navbar">
+   <nav class="navbar navbar-expand-lg sticky-top custom-navbar">
       <div class="container-fluid">
         <a class="navbar-brand fw-bold fs-3 gt-2" href="./index.html">
-          Mashakelna 
+          Mashakelna
         </a>
         <button
           class="navbar-toggler"
@@ -44,7 +44,6 @@
         </button>
         <div class="collapse navbar-collapse" id="main">
           <ul class="navbar-nav mx-auto align-items-center">
-            <!-- Links -->
             <li class="nav-item">
               <a class="nav-link active" href="./index.html">Home</a>
             </li>
@@ -52,7 +51,9 @@
               <a class="nav-link" href="./pages/developer.html">Developers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/leaderboard.html">Leaderboard</a>
+              <a class="nav-link" href="./pages/leaderboard.html"
+                >Leaderboard</a
+              >
             </li>
             <li class="nav-item"><a class="nav-link" href="#FAQ">FAQ</a></li>
 
@@ -69,15 +70,13 @@
               <ul class="dropdown-menu">
                 <li>
                   <a class="dropdown-item" href="#"
-                    ><i class="fa-regular fa-bell"></i
-                    ><span>Notifications</span></a
+                    ><i class="fa-regular fa-bell"></i><span>Notifications</span></a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item" href="#"
-                    ><i class="fa-regular fa-user"></i
-                    ><span>Your Profile</span></a
+                    ><i class="fa-regular fa-user"></i><span>Your Profile</span></a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
@@ -89,24 +88,23 @@
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item" href="#"
-                    ><i class="fa-solid fa-right-from-bracket"></i
-                    ><span>Log out</span></a
+                    ><i class="fa-solid fa-right-from-bracket"></i><span>Log out</span></a
                   >
                 </li>
               </ul>
             </li>
           </ul>
           <div class="nav-item mx-3">
-            <form class="d-flex search-form border border-1 border-dark">
+            <form class="d-flex search-form">
               <span
-                class="span-search input-group-text bg-transparent rounded-0 border-end-2 border-dark"
+                class="span-search input-group-text bg-transparent"
               >
                 <i class="fa-solid fa-magnifying-glass"></i>
               </span>
               <input
                 type="search"
-                class="form-control border-0"
-                placeholder="Search for problems or developers"
+                class="form-control"
+                placeholder="Search"
                 id="Search"
               />
             </form>
@@ -128,51 +126,7 @@
 
     <!--start landing  -->
 
-    <!--end landing  -->
-    <!-- <div class="landing">
-      <div class="container text-center">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-10  my-container position-absolute top-50 start-50 ">
-            <div class=" row row-cols-md-2  g-5 align-items-center">
-              <div class="col-md-6 p-5 text-center">
-                <div class="text">
-                  <div class="heading">
-                    <h1>Solve Problems.</h1>
-                    <p class="h1">Build Solutions.</p>
-                    <p class="h1">Collaborate.</p>
-                  </div>
-                  <p>
-                    Connect with a vibrant community of developers and
-                    problem-posters. Tackle challenges, innovate, and grow.
-                  </p>
-                  <div class="landing-btns">
-                    <a href="" class="btn btn-primary rounded-pill g-3 px-3"
-                      >Post a Problem</a
-                    >
-                    <a href="" class="btn btn-primary rounded-pill g-3 px-3"
-                      >Find a Developer</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 p-5 text-center">
-                <div class="img ">
-                  <figure class="figure">
-                    <img
-                      src="./imgs/landing.png"
-                      class=" img-fluid rounded"
-                      alt="..."
-                    />
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>-->
-
-    <div class="landing d-flex justify-content-center align-items-center">
+    <div class="landing d-flex justify-content-center align-items-center pb-1">
       <div class="container d-flex justify-content-center g-5">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-10 my-container p-5">
@@ -189,7 +143,7 @@
                     problem-posters. Tackle challenges, innovate, and grow.
                   </p>
                   <div class="landing-btns d-flex gap-3 flex-wrap">
-                    <a href="#" class="btn btn-primary rounded-pill px-4">
+                    <a href="#" class="btn btn-primary rounded-pill landing-btn px-4">
                       Post a Problem
                     </a>
                     <a href="#" class="btn btn-outline-dark rounded-pill px-4">
@@ -212,370 +166,489 @@
           </div>
         </div>
       </div>
-  
     </div>
-    <div
-      class="landing-two d-flex justify-content-center align-items-center py-5"
-    >
-      <div class="container d-flex justify-content-center g-5">
-        <div class="row justify-content-center align-items-center">
-          <h2 class="fw-bold text-center pb-2">Recent Problems</h2>
 
-          <div class="col-lg-10 mt-5">
-            <div class="row row-cols-md-3 g-5 align-items-center">
-              <div class="col-md-4">
-                <div class="card w-100">
-                  <div class="card-body">
-                    <h5 class="card-title fw-semibold">
-                      API Integration with Third-Party Service
-                    </h5>
-                    <p class="card-text .text-black-50 lh-sm">
-                      Need help integrating our internal system's API with a new
-                      third-party payment gateway. The documentation is
-                      extensive but specific expertise is required to handle
-                      data mapping and error handling efficiently.
-                    </p>
+
+ 
+
+
+
+
+
+<div class="landing-two d-flex justify-content-center align-items-center py-5">
+  <div class="container d-flex justify-content-center g-5">
+    <div class="row justify-content-center align-items-center">
+      <h2 class="fw-bold text-center pb-2">Recent Problems</h2>
+      <div class="col-lg-10 mt-5">
+        <div class="row row-cols-md-3 g-5 align-items-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="card w-100">
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">
+                  API Integration with Third-Party Service
+                </h5>
+                <p class="card-text .text-black-50 lh-sm mb-0 pb-0">
+                  Need help integrating our internal system's API with a new
+                  third-party payment gateway. The documentation is extensive
+                  but specific expertise is required to handle data mapping and
+                  error handling efficiently.
+                </p>
+                <p class="mt-0 pb-0">
+                  <a
+                    class="link text-decoration-none my-5"
+                    data-bs-toggle="collapse"
+                    href="#collapseOne"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    View Details
+                  </a>
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-success rounded-pill text-white open"
+                  
+                >
+                  open
+                </button>
+
+                <div class="collapse" id="collapseOne">
+                  <div class="card card-body">
+                    Need help integrating our internal system's API with a new
+                    third-party payment gateway. The documentation is extensive
+                    but specific expertise is required to handle data mapping
+                    and error handling efficiently.
                     <button
-                      type="button"
-                      class="btn btn-success rounded-pill text-white"
+                      class="less-btn btn btn-outline-dark"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
                     >
-                      open
+                      Less
                     </button>
-
-                    <p>
-                      <a
-                        class="link"
-                        data-bs-toggle="collapse"
-                        href="#collapseExample"
-                        role="button"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                      >
-                        View Details
-                      </a>
-                    </p>
-                    <div class="collapse" id="collapseExample">
-                      <div class="card card-body">
-                        Need help integrating our internal system's API with a
-                        new third-party payment gateway. The documentation is
-                        extensive but specific expertise is required to handle
-                        data mapping and error handling efficiently.
-                      </div>
-                    </div>
-                    <a href="#" class="btn btn-primary Submit-Solution rounded-pill"
-                      >Submit Solution</a
-                    >
                   </div>
                 </div>
+                <a
+                  href="#"
+                  class="btn btn-primary Submit-Solution rounded-pill"
+                >
+                  Submit Solution
+                </a>
               </div>
-              <div class="col-md-4">
-                <div class="card w-100">
-                  <div class="card-body">
-                    <h5 class="card-title fw-semibold">
-                      Optimizing Database Queries for Performance
-                    </h5>
-                    <p class="card-text .text-black-50 lh-sm">
-                      Our application is experiencing slow load times due to
-                      inefficient database queries. We need a specialist to
-                      review our current SQL queries and suggest optimizations
-                      for better performance and scalability.
-                    </p>
-                    <button
-                      type="button"
-                      class="btn btn-primary rounded-pill text-white"
-                    >
-                      In Progress
-                    </button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card w-100">
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">
+                  Optimizing Database Queries for Performance
+                </h5>
+                <p class="card-text .text-black-50 lh-sm mb-0 pb-0">
+                  Our application is experiencing slow load times due to
+                  inefficient database queries. We need a specialist to review
+                  our current SQL queries and suggest optimizations for better
+                  performance and scalability.
+                </p>
+                <p class="mt-0 pb-0">
+                  <a
+                    class="link text-decoration-none my-5"
+                    data-bs-toggle="collapse"
+                    href="#collapseTwo"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    View Details
+                  </a>
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill text-white in-progress"
+                >
+                  In Progress
+                </button>
 
-                    <p>
-                       <a
-                        class="link"
-                        data-bs-toggle="collapse"
-                        href="#collapseExample"
-                        role="button"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                      >
-                        View Details
-                      </a>
-                    </p>
-                    <div class="collapse" id="collapseExample">
-                      <div class="card card-body">
-                        Need help integrating our internal system's API with a
-                        new third-party payment gateway. The documentation is
-                        extensive but specific expertise is required to handle
-                        data mapping and error handling efficiently.
-                      </div>
-                    </div>
-                    <a href="#" class="btn btn-primary rounded-pill">Submit Solution</a>
+                <div class="collapse" id="collapseTwo">
+                  <div class="card card-body">
+                    Our application is experiencing slow load times due to
+                    inefficient database queries. We need a specialist to review
+                    our current SQL queries and suggest optimizations for better
+                    performance and scalability.
+                    <button
+                      class="less-btn btn btn-outline-dark"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                    >
+                      Less
+                    </button>
                   </div>
                 </div>
+                <a href="#" class="btn btn-primary Submit-Solution rounded-pill">
+                  Submit Solution
+                </a>
               </div>
-              <div class="col-md-4">
-                <div class="card w-100">
-                  <div class="card-body">
-                    <h5 class="card-title fw-semibold">
-                      Implementing Real-time Chat Functionality
-                    </h5>
-                    <p class="card-text .text-black-50 lh-sm">
-                      Looking for a developer to build a real-time chat feature
-                      for our web application. Requires experience with
-                      WebSockets and handling concurrent user connections
-                      seamlessly.
-                    </p>
-                    <button
-                      type="button"
-                      class="btn btn-success rounded-pill text-white"
-                    >
-                      open
-                    </button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card w-100">
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">
+                  Implementing Real-time Chat Functionality
+                </h5>
+                <p class="card-text .text-black-50 lh-sm mb-0 pb-0">
+                  Looking for a developer to build a real-time chat feature for
+                  our web application. Requires experience with WebSockets and
+                  handling concurrent user connections seamlessly.
+                </p>
+                <p class="mt-0 pb-0">
+                  <a
+                    class="link text-decoration-none my-5"
+                    data-bs-toggle="collapse"
+                    href="#collapseThree"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    View Details
+                  </a>
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-success rounded-pill text-white open"
+                >
+                  open
+                </button>
 
-                    <p>
-                   <a
-                        class="link"
-                        data-bs-toggle="collapse"
-                        href="#collapseExample"
-                        role="button"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                      >
-                        View Details
-                      </a>
-                    </p>
-                    <div class="collapse" id="collapseExample">
-                      <div class="card card-body">
-                        Need help integrating our internal system's API with a
-                        new third-party payment gateway. The documentation is
-                        extensive but specific expertise is required to handle
-                        data mapping and error handling efficiently.
-                      </div>
-                    </div>
-                    <a href="#" class="btn btn-primary rounded-pill">Submit Solution</a>
+                <div class="collapse" id="collapseThree">
+                  <div class="card card-body">
+                    Looking for a developer to build a real-time chat feature
+                    for our web application. Requires experience with
+                    WebSockets and handling concurrent user connections
+                    seamlessly.
+                    <button
+                      class="less-btn btn btn-outline-dark"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                    >
+                      Less
+                    </button>
                   </div>
                 </div>
+                <a href="#" class="btn btn-primary Submit-Solution rounded-pill">
+                  Submit Solution
+                </a>
               </div>
-              <div class="col-md-4">
-                <div class="card w-100">
-                  <div class="card-body">
-                    <h5 class="card-title fw-semibold">
-                      Cross-Browser Compatibility Fixes
-                    </h5>
-                    <p class="card-text .text-black-50 lh-sm">
-                      Our website displays inconsistently across different
-                      browsers (Chrome, Firefox, Safari, Edge). We need a
-                      frontend expert to identify and resolve CSS/JS
-                      compatibility issues.
-                    </p>
-                    <button
-                      type="button"
-                      class="btn btn-success rounded-pill text-white"
-                    >
-                      open
-                    </button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card w-100">
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">
+                  Cross-Browser Compatibility Fixes
+                </h5>
+                <p class="card-text .text-black-50 lh-sm mb-0 pb-0">
+                  Our website displays inconsistently across different browsers
+                  (Chrome, Firefox, Safari, Edge). We need a frontend expert to
+                  identify and resolve CSS/JS compatibility issues.
+                </p>
+                <p class="mt-0 pb-0">
+                  <a
+                    class="link text-decoration-none my-5"
+                    data-bs-toggle="collapse"
+                    href="#collapseFour"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    View Details
+                  </a>
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-success rounded-pill text-white open"
+                >
+                  open
+                </button>
 
-                    <p>
-                       <a
-                        class="link"
-                        data-bs-toggle="collapse"
-                        href="#collapseExample"
-                        role="button"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                      >
-                        View Details
-                      </a>
-                    </p>
-                    <div class="collapse" id="collapseExample">
-                      <div class="card card-body">
-                        Need help integrating our internal system's API with a
-                        new third-party payment gateway. The documentation is
-                        extensive but specific expertise is required to handle
-                        data mapping and error handling efficiently.
-                      </div>
-                    </div>
-                    <a href="#" class="btn btn-primary rounded-pill">Submit Solution</a>
+                <div class="collapse" id="collapseFour">
+                  <div class="card card-body">
+                    Our website displays inconsistently across different
+                    browsers (Chrome, Firefox, Safari, Edge). We need a frontend
+                    expert to identify and resolve CSS/JS compatibility issues.
+                    <button
+                      class="less-btn btn btn-outline-dark"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                    >
+                      Less
+                    </button>
                   </div>
                 </div>
+                <a href="#" class="btn btn-primary Submit-Solution rounded-pill">
+                  Submit Solution
+                </a>
               </div>
-              <div class="col-md-4">
-                <div class="card w-100">
-                  <div class="card-body">
-                    <h5 class="card-title fw-semibold">
-                      Setting Up CI/CD Pipeline for Mobile App
-                    </h5>
-                    <p class="card-text .text-black-50 lh-sm">
-                      Require assistance in establishing a robust CI/CD pipeline
-                      for our React Native mobile application. Focus on
-                      automated testing, build processes, and deployment to app
-                      stores.
-                    </p>
-                    <button
-                      type="button"
-                      class="btn btn-success rounded-pill text-white"
-                    >
-                      open
-                    </button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card w-100">
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">
+                  Setting Up CI/CD Pipeline for Mobile App
+                </h5>
+                <p class="card-text .text-black-50 lh-sm mb-0 pb-0">
+                  Require assistance in establishing a robust CI/CD pipeline for
+                  our React Native mobile application. Focus on automated
+                  testing, build processes, and deployment to app stores.
+                </p>
+                <p class="mt-0 pb-0">
+                  <a
+                    class="link text-decoration-none my-5"
+                    data-bs-toggle="collapse"
+                    href="#collapseFive"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    View Details
+                  </a>
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-success rounded-pill text-white open"
+                >
+                  open
+                </button>
 
-                    <p>
-                      <a
-                        class="link"
-                        data-bs-toggle="collapse"
-                        href="#collapseExample"
-                        role="button"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                      >
-                        View Details
-                      </a>
-                    </p>
-                    <div class="collapse" id="collapseExample">
-                      <div class="card card-body">
-                        Need help integrating our internal system's API with a
-                        new third-party payment gateway. The documentation is
-                        extensive but specific expertise is required to handle
-                        data mapping and error handling efficiently.
-                      </div>
-                    </div>
-                    <a href="#" class="btn btn-primary rounded-pill Submit-Solution w-75 ">Submit Solution</a>
+                <div class="collapse" id="collapseFive">
+                  <div class="card card-body">
+                    Require assistance in establishing a robust CI/CD pipeline
+                    for our React Native mobile application. Focus on automated
+                    testing, build processes, and deployment to app stores.
+                    <button
+                      class="less-btn btn btn-outline-dark"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                    >
+                      Less
+                    </button>
                   </div>
                 </div>
+                <a href="#" class="btn btn-primary Submit-Solution rounded-pill">
+                  Submit Solution
+                </a>
               </div>
-              <div class="col-md-4">
-                <div class="card w-100">
-                  <div class="card-body">
-                    <h5 class="card-title fw-semibold">
-                      Refactoring Legacy JavaScript Codebase
-                    </h5>
-                    <p class="card-text .text-black-50 lh-sm">
-                      Our old JavaScript codebase is difficult to maintain and
-                      extend. Seeking an experienced developer to refactor it
-                      into a modern, modular, and testable structure using ES6+
-                      features.
-                    </p>
-                    <button
-                      type="button"
-                      class="btn btn-primary rounded-pill text-white"
-                    >
-                      In Progress
-                    </button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card w-100">
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">
+                  Refactoring Legacy JavaScript Codebase
+                </h5>
+                <p class="card-text .text-black-50 lh-sm mb-0 pb-0">
+                  Our old JavaScript codebase is difficult to maintain and
+                  extend. Seeking an experienced developer to refactor it into a
+                  modern, modular, and testable structure using ES6+ features.
+                </p>
+                <p class="mt-0 pb-0">
+                  <a
+                    class="link text-decoration-none my-5"
+                    data-bs-toggle="collapse"
+                    href="#collapseSix"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    View Details
+                  </a>
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill text-white in-progress"
+                >
+                  In Progress
+                </button>
 
-                    <p>
-                       <a
-                        class="link"
-                        data-bs-toggle="collapse"
-                        href="#collapseExample"
-                        role="button"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                      >
-                        View Details
-                      </a>
-                    </p>
-                    <div class="collapse" id="collapseExample">
-                      <div class="card card-body">
-                        Need help integrating our internal system's API with a
-                        new third-party payment gateway. The documentation is
-                        extensive but specific expertise is required to handle
-                        data mapping and error handling efficiently.
-                      </div>
-                    </div>
-                    <a href="#" class="btn btn-primary rounded-pill Submit-Solution w-75">Submit Solution</a>
+                <div class="collapse" id="collapseSix">
+                  <div class="card card-body">
+                    Our old JavaScript codebase is difficult to maintain and
+                    extend. Seeking an experienced developer to refactor it into
+                    a modern, modular, and testable structure using ES6+
+                    features.
+                    <button
+                      class="less-btn btn btn-outline-dark"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix"
+                    >
+                      Less
+                    </button>
                   </div>
                 </div>
+                <a href="#" class="btn btn-primary Submit-Solution rounded-pill">
+                  Submit Solution
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <!--<div class="landing-two py-5">
-      <div class="container text-center">
-        <h2 class="fw-bold">Recent Problems</h2>
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <div class="row g-5 mx-auto">
-              <div class="col-md-2 col-lg-3">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 col-lg-3">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 col-lg-3">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row g-5 mx-auto">
-              <div class="col-md-2 col-lg-3">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 col-lg-3">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 col-lg-3">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+
+<div class="container py-5">
+<div class="row">
+  <div class="col-lg-11 mx-auto">
+      <div class="row">
+    <!-- Left Section: Top Developers -->
+    <div class="col-lg-6 col-md-12 mb-4">
+      <h4 class="mb-4">Top Developers of the Week</h4>
+
+      <!-- Developer 1 -->
+      <div class="d-flex align-items-center justify-content-between p-3 mb-3 border rounded-3 bg-white custom-card">
+        <div class="d-flex align-items-center">
+          <img src="https://via.placeholder.com/50" alt="profile" class="rounded-circle me-3" width="50" height="50">
+          <div>
+            <h6 class="mb-0">Aisha Rahman</h6>
+            <small class="text-muted">React, Node.js, MongoDB</small><br>
+            <small class="text-warning">★ 4.9</small>
           </div>
         </div>
+        <a href="#" class="text-primary fw-semibold">View Profile</a>
       </div>
-    </div>-->
 
-    <script src="./nav.js"></script>
+      <!-- Developer 2 -->
+      <div class="d-flex align-items-center justify-content-between p-3 mb-3 border rounded-3 bg-white custom-card">
+        <div class="d-flex align-items-center">
+          <img src="https://via.placeholder.com/50" alt="profile" class="rounded-circle me-3" width="50" height="50">
+          <div>
+            <h6 class="mb-0">David Chen</h6>
+            <small class="text-muted">Python, Django, Data Science</small><br>
+            <small class="text-warning">★ 4.8</small>
+          </div>
+        </div>
+        <a href="#" class="text-primary fw-semibold">View Profile</a>
+      </div>
+
+      <!-- Developer 3 -->
+      <div class="d-flex align-items-center justify-content-between p-3 border rounded-3 bg-white custom-card">
+        <div class="d-flex align-items-center">
+          <img src="https://via.placeholder.com/50" alt="profile" class="rounded-circle me-3" width="50" height="50">
+          <div>
+            <h6 class="mb-0">Sarah Kim</h6>
+            <small class="text-muted">Java, Spring Boot, AWS</small><br>
+            <small class="text-warning">★ 4.7</small>
+          </div>
+        </div>
+        <a href="#" class="text-primary fw-semibold">View Profile</a>
+      </div>
+    </div>
+
+    <!-- Right Section: Most Solved Problems -->
+    <div class="col-lg-6 col-md-12">
+      <h4 class="mb-4">Most Solved Problems</h4>
+
+      <!-- Problem 1 -->
+      <div class="d-flex align-items-center justify-content-between p-3 mb-3 border rounded-3 bg-white custom-card">
+        <div>
+          <h6 class="mb-0">Authentication System Revamp</h6>
+          <small class="text-muted">Solved by: John Doe</small>
+        </div>
+        <a href="#" class="text-primary fw-semibold">View</a>
+      </div>
+
+      <!-- Problem 2 -->
+      <div class="d-flex align-items-center justify-content-between p-3 mb-3 border rounded-3 bg-white custom-card">
+        <div>
+          <h6 class="mb-0">Frontend Responsiveness Issues</h6>
+          <small class="text-muted">Solved by: Jane Smith</small>
+        </div>
+        <a href="#" class="text-primary fw-semibold">View</a>
+      </div>
+
+      <!-- Problem 3 -->
+      <div class="d-flex align-items-center justify-content-between p-3 mb-3 border rounded-3 bg-white custom-card">
+        <div>
+          <h6 class="mb-0">Containerization with Docker</h6>
+          <small class="text-muted">Solved by: Alex Johnson</small>
+        </div>
+        <a href="#" class="text-primary fw-semibold">View</a>
+      </div>
+
+      <!-- Problem 4 -->
+      <div class="d-flex align-items-center justify-content-between p-3 border rounded-3 bg-white custom-card">
+        <div>
+          <h6 class="mb-0">Implementing Search Filters</h6>
+          <small class="text-muted">Solved by: Emily White</small>
+        </div>
+        <a href="#" class="text-primary fw-semibold">View</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<footer class="footer">
+      <div class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <div class="footer-logo">🌐</div>
+          <p class="footer-desc">
+            Facilitating problem-solving and collaboration between users and
+            developers.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Integrations</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <script>
+      let lessBtn = document.querySelector(".less-btn");
+      lessBtn.onclick = () => {
+        lessBtn.setAttribute("aria-expanded", "false");
+      };
+    </script>
     <script src="./js/all.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js.map"></script>
