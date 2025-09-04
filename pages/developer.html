@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solve Problems.</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/developer.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--start navbar  -->
+    <nav class="navbar navbar-expand-lg sticky-top custom-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-3 gt-2" href="../index.html"> Mashakelna </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav mx-auto align-items-center">
+            <!-- Links -->
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/developer.html">Developers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/leaderboard.html">Leaderboard</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#FAQ">FAQ</a></li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-regular fa-bell"></i
+                    ><span>Notifications</span></a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-regular fa-user"></i
+                    ><span>Your Profile</span></a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-gear"></i><span>Setting</span></a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-right-from-bracket"></i
+                    ><span>Log out</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="nav-item mx-3">
+            <form class="d-flex search-form border border-1 border-dark">
+              <span
+                class="span-search input-group-text bg-transparent rounded-0 border-end-2 border-dark"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <input
+                type="search"
+                class="form-control border-0"
+                placeholder="Search for problems or developers"
+                id="Search"
+              />
+            </form>
+          </div>
+          <div class="nav-item ms-3">
+            <a href="">
+              <img
+                src="./imgs/one.jpg"
+                alt="Profile"
+                class="rounded-circle"
+                style="width: 35px; height: 35px"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--end navbar  -->
+
+    <!-- developer section -->
+
+    <div class="developers-header">
+      <h2>Our Expert Developers</h2>
+
+      <div class="search-filters">
+        <input
+          type="text"
+          placeholder="Search by name, skill, or technology..."
+        />
+
+        <select>
+          <option>Filter by Skill</option>
+        </select>
+
+        <select>
+          <option>Filter by Rating</option>
+        </select>
+      </div>
+
+      <button class="become-btn">
+        <span class="icon">👤</span> Become a Developer
+      </button>
+    </div>
+
+    <!-- developer card section -->
+    <div class="developers-container">
+      <div class="developer-card">
+        <div class="card-header">
+          <img
+            class="background-img"
+            src="https://picsum.photos/id/10/500/300"
+            alt="Tech background image"
+          />
+          <img
+            class="profile-img"
+            src="../images/developer/business-concept-smiling-thoughtful-handsome-man-standing-white-isolated-background-touching-his-chin-with-hand.jpg"
+            alt="Sarah Chen profile image"
+          />
+        </div>
+        <div class="card-body">
+          <h3>Sarah Chen</h3>
+          <p class="rating">⭐ 4.9 (120 reviews)</p>
+          <div class="skills">
+            <span>React</span><span>Node.js</span><span>TypeScript</span
+            ><span>AWS</span>
+          </div>
+          <div class="actions">
+            <button class="view">View Profile</button>
+            <button class="message">💬 Message</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="developer-card">
+        <div class="card-header">
+          <img
+            class="background-img"
+            src="https://picsum.photos/id/12/500/300"
+            alt="Tech background image"
+          />
+          <img
+            class="profile-img"
+            src="../images/developer/handsome-businessman-suit-glasses-cross-arms-chest-look.jpg"
+            alt="David Lee profile image"
+          />
+        </div>
+        <div class="card-body">
+          <h3>David Lee</h3>
+          <p class="rating">⭐ 4.8 (98 reviews)</p>
+          <div class="skills">
+            <span>Vue</span><span>Laravel</span><span>MySQL</span>
+          </div>
+          <div class="actions">
+            <button class="view">View Profile</button>
+            <button class="message">💬 Message</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="developer-card">
+        <div class="card-header">
+          <img
+            class="background-img"
+            src="https://picsum.photos/id/15/500/300"
+            alt="Tech background image"
+          />
+          <img
+            class="profile-img"
+            src="../images/developer/confident-young-businesswoman-standing-with-her-arm-crossed-against-gray-backdrop.jpg"
+            alt="Maria Gomez profile image"
+          />
+        </div>
+        <div class="card-body">
+          <h3>Maria Gomez</h3>
+          <p class="rating">⭐ 5.0 (134 reviews)</p>
+          <div class="skills">
+            <span>Flutter</span><span>Firebase</span><span>Dart</span>
+          </div>
+          <div class="actions">
+            <button class="view">View Profile</button>
+            <button class="message">💬 Message</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="developer-card">
+        <div class="card-header">
+          <img
+            class="background-img"
+            src="https://picsum.photos/id/18/500/300"
+            alt="Tech background image"
+          />
+          <img
+            class="profile-img"
+            src="../images/developer/successful-handsome-business-man-office.jpg"
+            alt="Ahmed Youssef profile image"
+          />
+        </div>
+        <div class="card-body">
+          <h3>Ahmed Youssef</h3>
+          <p class="rating">⭐ 4.7 (87 reviews)</p>
+          <div class="skills">
+            <span>Python</span><span>Django</span><span>PostgreSQL</span>
+          </div>
+          <div class="actions">
+            <button class="view">View Profile</button>
+            <button class="message">💬 Message</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="developer-card">
+        <div class="card-header">
+          <img
+            class="background-img"
+            src="https://picsum.photos/id/21/500/300"
+            alt="Tech background image"
+          />
+          <img
+            class="profile-img"
+            src="../images/developer/portrait-smiling-business-woman-isolated-white-background.jpg"
+            alt="Noor Hassan profile image"
+          />
+        </div>
+        <div class="card-body">
+          <h3>Noor Hassan</h3>
+          <p class="rating">⭐ 4.9 (112 reviews)</p>
+          <div class="skills">
+            <span>Angular</span><span>RxJS</span><span>SCSS</span>
+          </div>
+          <div class="actions">
+            <button class="view">View Profile</button>
+            <button class="message">💬 Message</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="developer-card">
+        <div class="card-header">
+          <img
+            class="background-img"
+            src="https://picsum.photos/id/24/500/300"
+            alt="Tech background image"
+          />
+          <img
+            class="profile-img"
+            src="../images/developer/young-elegant-businesswoman-posing.jpg"
+            alt="Mohamed Adel profile image"
+          />
+        </div>
+        <div class="card-body">
+          <h3>Mohamed Adel</h3>
+          <p class="rating">⭐ 4.6 (88 reviews)</p>
+          <div class="skills">
+            <span>PHP</span><span>CodeIgniter</span><span>HTML</span>
+          </div>
+          <div class="actions">
+            <button class="view">View Profile</button>
+            <button class="message">💬 Message</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="developer-card">
+        <div class="card-header">
+          <img
+            class="background-img"
+            src="https://picsum.photos/id/27/500/300"
+            alt="Tech background image"
+          />
+          <img
+            class="profile-img"
+            src="../images/developer/smiling-blonde-business-woman-posing-with-crossed-arms.jpg"
+            alt="Emily Rose profile image"
+          />
+        </div>
+        <div class="card-body">
+          <h3>Emily Rose</h3>
+          <p class="rating">⭐ 5.0 (143 reviews)</p>
+          <div class="skills">
+            <span>iOS</span><span>Swift</span><span>UI Kit</span>
+          </div>
+          <div class="actions">
+            <button class="view">View Profile</button>
+            <button class="message">💬 Message</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="developer-card">
+        <div class="card-header">
+          <img
+            class="background-img"
+            src="https://picsum.photos/id/30/500/300"
+            alt="Tech background image"
+          />
+          <img
+            class="profile-img"
+            src="../images/developer/young-smiling-businesswoman.jpg"
+            alt="John Mark profile image"
+          />
+        </div>
+        <div class="card-body">
+          <h3>John Mark</h3>
+          <p class="rating">⭐ 4.5 (76 reviews)</p>
+          <div class="skills">
+            <span>C#</span><span>.NET</span><span>Azure</span>
+          </div>
+          <div class="actions">
+            <button class="view">View Profile</button>
+            <button class="message">💬 Message</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="developer-card">
+        <div class="card-header">
+          <img
+            class="background-img"
+            src="https://picsum.photos/id/33/500/300"
+            alt="Tech background image"
+          />
+          <img
+            class="profile-img"
+            src="../images/developer/smiling-woman-with-brown-jacket.jpg"
+            alt="Nada Ehab profile image"
+          />
+        </div>
+        <div class="card-body">
+          <h3>Nada Ehab</h3>
+          <p class="rating">⭐ 4.9 (99 reviews)</p>
+          <div class="skills">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="actions">
+            <button class="view">View Profile</button>
+            <button class="message">💬 Message</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="developer-card">
+        <div class="card-header">
+          <img
+            class="background-img"
+            src="https://picsum.photos/id/36/500/300"
+            alt="Tech background image"
+          />
+          <img
+            class="profile-img"
+            src="../images/developer/young-elegant-businesswoman-posing.jpg"
+            alt="Rana Zaki profile image"
+          />
+        </div>
+        <div class="card-body">
+          <h3>Rana Zaki</h3>
+          <p class="rating">⭐ 4.8 (91 reviews)</p>
+          <div class="skills">
+            <span>Next.js</span><span>MongoDB</span><span>Tailwind</span>
+          </div>
+          <div class="actions">
+            <button class="view">View Profile</button>
+            <button class="message">💬 Message</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="developer-card">
+        <div class="card-header">
+          <img
+            class="background-img"
+            src="https://picsum.photos/id/39/500/300"
+            alt="Tech background image"
+          />
+          <img
+            class="profile-img"
+            src="../images/developer/young-successful-businessman-posing-with-crossed-arms.jpg"
+            alt="Khaled Farag profile image"
+          />
+        </div>
+        <div class="card-body">
+          <h3>Khaled Farag</h3>
+          <p class="rating">⭐ 4.4 (70 reviews)</p>
+          <div class="skills">
+            <span>Java</span><span>Spring</span><span>Hibernate</span>
+          </div>
+          <div class="actions">
+            <button class="view">View Profile</button>
+            <button class="message">💬 Message</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="developer-card">
+        <div class="card-header">
+          <img
+            class="background-img"
+            src="https://picsum.photos/id/42/500/300"
+            alt="Tech background image"
+          />
+          <img
+            class="profile-img"
+            src="../images/developer/young-smiling-businesswoman.jpg"
+            alt="Yasmin Ali profile image"
+          />
+        </div>
+        <div class="card-body">
+          <h3>Yasmin Ali</h3>
+          <p class="rating">⭐ 5.0 (155 reviews)</p>
+          <div class="skills">
+            <span>UI/UX</span><span>Figma</span><span>Prototyping</span>
+          </div>
+          <div class="actions">
+            <button class="view">View Profile</button>
+            <button class="message">💬 Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== Start Footer ====== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <div class="footer-logo">🌐</div>
+          <p class="footer-desc">
+            Facilitating problem-solving and collaboration between users and
+            developers.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Integrations</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS (Required for Collapse) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

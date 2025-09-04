@@ -1,0 +1,86 @@
+/* start global */
+:root {
+  --main-color: #565e6cff;
+  --back-color: #fafafbff;
+  --hover-color: #3175b4ff;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+}
+/* end global */
+/* start landing */
+/*.landing{
+     min-height: 100vh;
+}
+.landing .my-container{
+    height: 60vh;
+    background-color: #F0F9FFFF;
+    border-radius: 16px;
+    padding: 2rem;
+
+}
+.landing .my-container .second-row{
+        transform: translate(-50%,-50%);
+
+}
+.landing .img{
+    width: 90%;
+}
+
+.landing .img .figure{
+    width: 100%;
+    border-radius: 16px;
+}
+.landing .img .figure img{
+    border-radius: 16px;
+}
+.landing .heading h1
+,.landing .heading .h1{
+padding: 0;
+margin: 0;
+}*/
+
+/* Landing Section */
+.landing {
+  /* background-color: #f8fafc;  */
+  min-height: calc(100vh - 68.8px);
+}
+
+.landing .my-container {
+  background-color: #f0f9ff;
+  border-radius: 16px;
+  min-height: 60vh;
+}
+
+.landing .heading h1,
+.landing .heading .h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+  font-size: 3rem;
+}
+.landing .img .figure {
+  width: 80%;
+  padding: 50px;
+  border-radius: 40px !important;
+}
+.landing .img .figure img {
+  border-radius: 40px !important;
+  object-fit: cover;
+  width: 90%;
+  max-height: 180px;
+}
+
+/* End Landing */
+
+/* end landing */
